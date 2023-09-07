@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Rubik+Mono+One&display=swap');
+:root {
+    --box-size: 15px;
+    --column: 40;
+    --row: 20;
+    --black-box-color: #000;
+    --white-box-color: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #66C3FF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: nowrap column;
+}
+
+h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+header {
+    width: 100%;
+    background: #fff;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #0D3B66;
+    text-shadow: 3px black;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-weight: bold;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    min-width: 50%;
+    min-height: 70vh;
+    margin-top: 2rem;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.panel {
+    width: calc(100% / 5);
+}
+
+.game {
+    width: calc(100% / 1.5);
+    min-width: calc(var(--column)*var(--box-size) + 2rem);
+    min-height: calc(var(--row)*var(--box-size) + 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: nowrap column;
+    gap: 1.5rem;
+    border-radius: 10px;
+    background: #f1f1f1;
+    margin: 0.5rem 2.5rem;
+    padding: 2rem 1rem;
+}
+
+.grid {
+    display: flex;
+    flex-flow: wrap row;
+    width: calc(var(--column)*var(--box-size));
+    height: calc(var(--row)*var(--box-size));
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.settings {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap column;
+    flex-direction: column;
+    padding: 3rem 10rem;
+    border-right: 1px solid #ccc;
+    font-weight: 300;
+}
+
+.settings-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background: #f1f1f1;
+}
+
+.box {
+    width: var(--box-size);
+    height: var(--box-size);
+}
+
+.black {
+    background: var(--black-box-color);
+}
+
+.white {
+    background: var(--white-box-color);
+}
+
+.num-input {
+    border-radius: 10px;
+    border: 2px solid #0D3B66;
+    text-align: center;
+    width: 8rem;
+    font-size: 1.3rem;
+    appearance: textfield; /* Revert appearance for Firefox */
+    -moz-appearance: textfield; /* Revert appearance for Firefox */
+    font-weight: 300;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+label {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #0D3B66;
+}
+
+.resize, .btn {
+    background: #fff;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid #0D3B66;
+    padding: 0.5rem;
+    width: 6rem;
+    height: 2.5rem;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+.resize:hover {
+    background: #0D3B66;
+    color: #fff;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+::selection {
+    background: #0D3B66;
+    color: #fff;
+}
+
+.difficulty-btn {
+    display: flex;
+    margin: 1rem;
+}
+
+.easy{
+    background: #438842;
+    color: #fff;
+    border: 2px solid #438842;
+}
+
+.easy:hover{
+    background: #fff;
+    color: #438842;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.hard {
+    background: #F05D23;
+    border: 2px solid #F05D23;
+    color: #fff;
+}
+
+.hard:hover {
+    background: #fff;
+    color: #F05D23;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.game-status {
+    font-family: 'Rubik Mono One', sans-serif;
+    color: var(--black-box-color);
+    font-size: 1.5rem;
+}

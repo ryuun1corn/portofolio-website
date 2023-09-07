@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Guess the RGB</h1>
+    <div class="options">
+        <div id="difficulty">
+            <button id="easy">Easy</button>
+            <button id="hard">Hard</button>
+        </div>
+        <div class="options-number">
+            <form>
+                <input type="number" id="options-number" required placeholder="Insert number of options.">
+                <button id="options-button" type="submit">Insert</button>
+            </form>
+        </div>
+    </div>
+    <div class="game-text">
+        <p id="rgb-text"></p>
+    </div>
+    <div class="game-text">
+        <p id="game-text"></p>
+    </div>
+    <div class="guesses">
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

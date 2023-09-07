@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Cursor Game | ryuun1corn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Maze Cursor Game!</h1>
+    </header>
+    <div class="wrapper">
+        <div class="settings panel">
+            <form class="settings-form" id="settings-form">
+                <label for="width">Width</label><br>
+                <input type="number" id="width" class="num-input" value="30"><br>
+                <label for="height">Height</label><br>
+                <input type="number" id="height" class="num-input" value="20">
+                <button class="resize btn">Generate</button>
+            </form>
+            <div class="difficulty-btn">
+                <button class="easy btn">Easy</button>
+                <button class="hard btn">Hard</button>
+            </div>
+        </div>
+        <div class="game panel">
+            <div class="grid">
+            </div>
+            <div>
+                <p class="game-status">Idling...</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+</html>

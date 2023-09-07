@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #75ffe1, #75ffac);
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    background: white;
+    padding: 50px;
+    font-size: 35px;
+}
+
+.calculator-box {
+    background: white;
+    text-align: right;
+    width: 350px;
+    height: 45px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 30px;
+    padding: 3px;
+    font-weight: 100;
+}
+
+#box-two {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+button {
+    background: white;
+    border: none;
+    width: 58px;
+    height: 58px;
+    transition: all 0.3s ease;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+button:hover {
+    background: gray;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.number-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-row, .second-row, .third-row, .fourth-row {
+    font-size: 0;
+}

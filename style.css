@@ -266,6 +266,10 @@ footer > * {
     font-weight: 300;
 }
 
+div a {
+    color: black;
+}
+
 @media (width < 900px) {
     .nav-container {
         display: none;

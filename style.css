@@ -149,11 +149,16 @@ div h2 {
     padding: 5rem;
 }
 
+.projects-div {
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+}
+
 .projects-container {
-    width: 60vw;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: auto;
+    grid-template-columns: minmax(350px, 1fr) minmax(350px, 1fr);
     grid-gap: 1.5rem;
 }
 
@@ -180,7 +185,7 @@ div h2 {
 
 .projects-screenshot {
     max-width: 20rem;
-    width: 60%;
+    width: 100%;
     min-width: 10rem;
     border-radius: 0.5rem;
 }
@@ -202,10 +207,6 @@ div h2 {
 
 .projects-card:hover {
     border: solid 3px #0F52BA;
-}
-
-.projects-div {
-    margin: 5rem;
 }
 
 a:visited {
@@ -276,7 +277,8 @@ div a {
     }
 
     .projects-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(300px, 450px);
+        justify-content: center;
     }
     
     header {
@@ -288,6 +290,7 @@ div a {
 
     .main-div {
         margin: 0.5rem;
+        padding: 2rem;
     }
 
     .heading-div {
